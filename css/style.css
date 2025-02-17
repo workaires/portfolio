@@ -1,0 +1,203 @@
+/* Estilos Básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background-color: #111827;
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* Seção Inicial */
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 3rem;
+}
+
+a.cta-button {
+    text-decoration: none;
+}
+
+.profile-image {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 2rem;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    color: #9ca3af;
+    max-width: 600px;
+    margin-bottom: 2rem;
+}
+
+.cta-button {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 9999px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #163477;
+}
+
+    /* Seção de Habilidades */
+.skills {
+    /* Reduzindo o espaçamento superior para aproximar do botão */
+    padding: 2rem 2rem 5rem 2rem; 
+}
+
+.skills h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.skills-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.skill-card {
+    background-color: #1f2937;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.icon {
+    width: 2rem;
+    height: 2rem;
+    margin-bottom: 1rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.skill-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.tags span {
+    background-color: #374151;
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+}
+
+/* Seção de Contato */
+.contact {
+    text-align: center;
+    padding: 5rem 2rem;
+}
+
+.contact h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.contact p {
+    color: #9ca3af;
+    max-width: 600px;
+    margin: 0 auto 2rem;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.social-button {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: #1f2937;
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1.5rem;
+    border-radius: 9999px;
+    transition: background-color 0.3s;
+}
+
+.social-button:hover {
+    background-color: #374151;
+}
+
+.social-button .icon {
+    width: 1.25rem;
+    height: 1.25rem;
+    margin: 0;
+}
+
+/* Imagens dos Icons*/
+.programming { background-image: url("../images/programming.png"); }
+.frontend { background-image: url("../images/frontend.png"); }
+.technologies { background-image: url("../images/technologies.png"); }
+.support { background-image: url("../images/support.png"); }
+.database { background-image: url("../images/database.png"); }
+.management { background-image: url("../images/management.png"); }
+
+.github .icon { background-image: url("../images/github.png"); }
+.linkedin .icon { background-image: url("../images/linkedin.png"); }
+.email .icon { background-image: url("../images/email.png"); }
+.curriculum .icon { background-image: url("../images/curriculum.png"); }
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 2rem;
+    color: #6b7280;
+}
+
+/* Design Responsivo */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .social-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social-button {
+        width: 100%;
+        max-width: 200px;
+        justify-content: center;
+    }
+}
