@@ -7,7 +7,7 @@
 
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-    background-color: #111827;
+    background: linear-gradient(to bottom, #111827, #000000);
     color: #fff;
     line-height: 1.6;
 }
@@ -62,7 +62,6 @@ a.cta-button {
 
     /* Seção de Habilidades */
 .skills {
-    /* Reduzindo o espaçamento superior para aproximar do botão */
     padding: 2rem 2rem 5rem 2rem; 
 }
 
