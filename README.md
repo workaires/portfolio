@@ -20,4 +20,4 @@ Estou à disposição para trocar ideias e colaborar em projetos!
 
 ---
 
-Feito com 💻 por **Guilherme Aires**
+💻 Feito por **Guilherme Aires**
